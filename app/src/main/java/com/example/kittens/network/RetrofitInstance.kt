@@ -10,6 +10,7 @@ object RetrofitInstance {
         val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
+//            .client()
             .build()
         retrofit.create(CatApiService::class.java)
     }
